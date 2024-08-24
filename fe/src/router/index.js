@@ -27,6 +27,14 @@ export default new Router({
       redirect: '/index',
       children: [
         {
+          path: '/index',
+          name: 'Index',
+          component: () => import('@/views/home/index'),
+          meta: {
+            requireAuth: true
+          }
+        },
+        {
           path: '/user',
           name: 'User',
           component: () => import('@/views/user/index'),
