@@ -29,14 +29,6 @@ export default new Router({
         {
           path: '/index',
           name: 'Index',
-          component: () => import('@/views/home/index'),
-          meta: {
-            requireAuth: true
-          }
-        },
-        {
-          path: '/user',
-          name: 'User',
           component: () => import('@/views/user/index'),
           meta: {
             requireAuth: true
